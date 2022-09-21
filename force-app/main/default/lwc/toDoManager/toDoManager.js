@@ -1,16 +1,14 @@
-/**
- * ToDoManager component
- * Provides ability to add/edit/remove todos for today
- * View finished or unfinished todos
- * @author Manish Choudhari
- */
+
 
 import { LightningElement, track, api } from "lwc";
 import getCurrentTodos from "@salesforce/apex/ToDoController.getCurrentTodos";
 import addTodo from "@salesforce/apex/ToDoController.addTodo";
+import My_Resource from '@salesforce/resourceUrl/myResource';
+
 
 export default class toDoManager extends LightningElement {
   // standard public property to get component size
+  spring20Logo = My_Resource + '/images/Todo.jpg';
   // value can be SMALL, MEDIUM, LARGE based on current context
   @api flexipageRegionWidth;
 

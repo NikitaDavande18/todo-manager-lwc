@@ -1,8 +1,4 @@
-/**
- * ToDoItem component
- * Provides ability to edit/remove the item
- * @author Manish Choudhari
- */
+
 import { LightningElement, api } from "lwc";
 import updateTodo from "@salesforce/apex/ToDoController.updateTodo";
 import deleteTodo from "@salesforce/apex/ToDoController.deleteTodo";
